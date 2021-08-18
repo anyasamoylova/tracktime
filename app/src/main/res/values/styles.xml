@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBlue</item>
+        <item name="colorAccent">@color/colorLightBlue</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="materialCardViewStyle">@style/AppCard</item>
+        <item name="floatingActionButtonStyle">@style/AppFloatButtonStyle</item>
+        <item name="radioButtonStyle">@style/AppRadioButtonStyle</item>
+    </style>
+
+    <style name="AppCard" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.MediumComponent</item>
+        <item name="cardBackgroundColor">@color/colorBackground</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">10dp</item>
+    </style>
+
+    <style name="AppFloatButtonStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/colorBlue</item>
+    </style>
+
+    <style name="AppRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:background">@drawable/radio_selector</item>
+        <item name="android:textColor">@drawable/text_color</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+</resources>

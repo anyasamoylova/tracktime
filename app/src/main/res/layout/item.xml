@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="4dp"
+            android:text="ppp"
+            android:textAlignment="center"
+            android:textSize="@dimen/mainTextSize" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/circle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_brightness_1_24"
+                app:tint="@color/colorLightBlue" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/circle"
+                app:layout_constraintStart_toStartOf="@id/circle"
+                app:layout_constraintTop_toTopOf="@id/circle"
+                android:visibility="visible"
+                tools:src="@tools:sample/avatars"
+                app:tint="@color/colorBackground" />
+
+            <ImageView
+                android:id="@+id/editIcon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/ic_baseline_brightness_1_24"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="@color/colorBlue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/chronometer"
+            android:text="@string/default_timer"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/mainTextSize"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

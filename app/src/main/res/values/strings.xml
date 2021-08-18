@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">tracktime</string>
+    <string name="nav_open_drawer">Open navigation Drawer</string>
+    <string name="nav_close_drawer">Close navigation Drawer</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_statistics">Statistics</string>
+    <string name="add_timer">Add timer</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="default_timer">00:00:00</string>
+    <string name="edit">Edit</string>
+    <string name="activity_timer_name">Setting Timer</string>
+    <string name="edit_category">Edit category</string>
+    <string name="create_new_category">Create new category</string>
+    <string name="app_name1">TrackTime</string>
+    <string name="cancel">cancel</string>
+    <string name="new_tag">New tag:</string>
+    <string name="date">Date:</string>
+    <string name="start_str">Start:</string>
+    <string name="finish_str">Finish:</string>
+    <string name="tag_str">Tag:</string>
+    <string name="start_and_pause_button">start and pause button</string>
+    <string name="_7d">7D</string>
+    <string name="_1m">1M</string>
+    <string name="_3m">3M</string>
+    <string name="_6m">6M</string>
+    <string name="y">Y</string>
+    <string name="all">ALL</string>
+    <string name="back">Back</string>
+    <string name="go_back">Go back</string>
+</resources>

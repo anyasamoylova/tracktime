@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    main colors-->
+    <color name="colorBlue">#5CA4A9</color>
+    <color name="colorBackground">#E6EBE0</color>
+    <color name="colorLightBlue">#9BC1BC</color>
+    <color name="colorLightYellow">#F4F1BB</color>
+    <color name="colorLightRed">#ED6A5A</color>
+<!--    graph colors-->
+    <color name="colorGraphLilac">#54478C</color>
+    <color name="colorGraphDarkBlue">#2C699A</color>
+    <color name="colorGraphBlue">#048BA8</color>
+    <color name="colorGraphDarkGreen">#0DB39E</color>
+    <color name="colorGraphGreen">#16DB93</color>
+    <color name="colorGraphHerbal">#83E377</color>
+    <color name="colorGraphHerbalYellow">#B9E769</color>
+    <color name="colorGraphYellow">#EFEA5A</color>
+    <color name="colorGraphOrange">#F1C453</color>
+    <color name="colorGraphDarkOrange">#F29E4C</color>
+
+    <color name="colorLightBlueForItemDecor">#659BC1BC</color>
+</resources>
