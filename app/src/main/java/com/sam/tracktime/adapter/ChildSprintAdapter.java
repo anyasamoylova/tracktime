@@ -12,9 +12,17 @@ import com.sam.tracktime.R;
 import com.sam.tracktime.model.Sprint;
 
 import org.joda.time.DateTime;
+import org.joda.time.Duration;
+import org.joda.time.Period;
+import org.joda.time.ReadWritablePeriod;
+import org.joda.time.format.PeriodFormatter;
+import org.joda.time.format.PeriodParser;
+import org.joda.time.format.PeriodPrinter;
 
 import java.util.ArrayList;
+import java.util.Formatter;
 import java.util.List;
+import java.util.Locale;
 
 public class ChildSprintAdapter extends RecyclerView.Adapter {
     private List<Sprint> sprints = new ArrayList<>(50);
@@ -74,14 +82,22 @@ public class ChildSprintAdapter extends RecyclerView.Adapter {
         }
 
         public void bind(Sprint sprint) {
-            long duration = sprint.getFinishTime() - sprint.getStartDay();
+            long duration = sprint.getFinishTime() - sprint.getStartTime();
             tvTimeInterval.setText(parseTimeInterval(sprint.getStartTime(), sprint.getFinishTime()));
             tvDuration.setText(parseTime(duration));;
         }
 
         private String parseTime(Long time) {
-            DateTime dt = new DateTime(time);
-            return dt.toString("HH:mm:ss");
+            Duration duration = new Duration(time);
+            long hour = duration.getStandardHours();
+            long min = duration.getStandardMinutes() - hour * (60);
+            long sec = duration.getStandardSeconds() - hour * (60 * 60) - min * 60;
+            return String.format(Locale.getDefault(), "%02d:%02d:%02d", hour, min, sec);
+
+
+
+//            DateTime dt = new DateTime(time);
+//            return dt.toString("HH:mm:ss", Locale.);
         }
 
         private String parseTimeInterval(Long startTime, Long finishTime) {
